@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "singularName": "transaction",
+    "pluralName": "transactions",
+    "displayName": "transaction"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "buy_amount": {
+      "type": "biginteger"
+    },
+    "total_price": {
+      "type": "biginteger"
+    },
+    "shipping_price": {
+      "type": "biginteger"
+    },
+    "total_all": {
+      "type": "biginteger"
+    }
+  }
+}

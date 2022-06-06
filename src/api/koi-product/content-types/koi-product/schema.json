@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "koi_products",
+  "info": {
+    "singularName": "koi-product",
+    "pluralName": "koi-products",
+    "displayName": "KoiProducts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "age": {
+      "type": "enumeration",
+      "enum": [
+        "Benih (seed)",
+        "Muda (young)",
+        "Dewasa (adult)"
+      ]
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "koi_products"
+    }
+  }
+}
