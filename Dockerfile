@@ -1,7 +1,7 @@
 FROM node:16
 
 WORKDIR /app
-EXPOSE 1337
+EXPOSE 8080
 COPY ./package.json ./
 COPY ./package-lock.json ./
 
